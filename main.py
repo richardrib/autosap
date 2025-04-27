@@ -1,16 +1,23 @@
-# This is a sample Python script.
+import shutil
+import pyautogui
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def copiaraquivo():
+
+    #COPIANDO ARQUIVO E JÁ RENOMEANDO
+
+    origem = r"C:\Users\User\Desktop\BACK UP.txt"
+
+    destino = r"C:\Users\User\Downloads\NOVO PY.txt"
+
+    try:
+
+        shutil.copy(origem, destino )
+
+    except Exception as E:
+
+        print(f"Erro {E}")
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+pyautogui.moveTo(5000, 5000)
