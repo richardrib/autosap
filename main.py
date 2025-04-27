@@ -1,23 +1,7 @@
-import shutil
-import pyautogui
+import meus_modulos
 
-def copiaraquivo():
+resultado_soma = meus_modulos.soma(5, 3)
+resultado_subtrai = meus_modulos.subtrai(10, 2)
 
-    #COPIANDO ARQUIVO E JÁ RENOMEANDO
-
-    origem = r"C:\Users\User\Desktop\BACK UP.txt"
-
-    destino = r"C:\Users\User\Downloads\NOVO PY.txt"
-
-    try:
-
-        shutil.copy(origem, destino )
-
-    except Exception as E:
-
-        print(f"Erro {E}")
-
-
-
-
-pyautogui.moveTo(5000, 5000)
+print(f"Soma: {resultado_soma}")
+print(f"Subtrai: {resultado_subtrai}")
